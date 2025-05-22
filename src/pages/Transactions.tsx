@@ -140,7 +140,7 @@ const TransactionsPage: React.FC<TransactionsPageProps> = ({
       <Typography variant="h4" className="mb-6">交易</Typography>
 
       <Grid container spacing={4}>
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6}}>
           <Paper className="p-4">
             <Typography variant="h6" className="mb-4">创建新交易</Typography>
 
@@ -217,7 +217,7 @@ const TransactionsPage: React.FC<TransactionsPageProps> = ({
           </Paper>
         </Grid>
 
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6}}>
           <Paper className="p-4">
             <Typography variant="h6" className="mb-4">待处理交易</Typography>
 
@@ -229,10 +229,10 @@ const TransactionsPage: React.FC<TransactionsPageProps> = ({
                   <Card key={index} className="bg-yellow-50">
                     <CardContent>
                       <Grid container spacing={1}>
-                        <Grid item xs={3}>
+                        <Grid size={{ xs: 3 }}>
                           <Typography variant="body2" color="textSecondary">发送方:</Typography>
                         </Grid>
-                        <Grid item xs={9}>
+                        <Grid size={{ xs: 9 }}>
                           <Typography variant="body2" className="font-mono">
                             {tx.fromAddress === null ? (
                               <Chip label="系统奖励" size="small" color="success" />
@@ -242,28 +242,28 @@ const TransactionsPage: React.FC<TransactionsPageProps> = ({
                           </Typography>
                         </Grid>
 
-                        <Grid item xs={3}>
+                        <Grid size={{ xs: 3 }}>
                           <Typography variant="body2" color="textSecondary">接收方:</Typography>
                         </Grid>
-                        <Grid item xs={9}>
+                        <Grid size={{ xs: 9 }}>
                           <Typography variant="body2" className="font-mono">
                             {truncateAddress(tx.toAddress)}
                           </Typography>
                         </Grid>
 
-                        <Grid item xs={3}>
+                        <Grid size={{ xs: 3 }}>
                           <Typography variant="body2" color="textSecondary">金额:</Typography>
                         </Grid>
-                        <Grid item xs={9}>
+                        <Grid size={{ xs: 9 }}>
                           <Typography variant="body2">
                             <strong>{tx.amount} 代币</strong>
                           </Typography>
                         </Grid>
 
-                        <Grid item xs={3}>
+                        <Grid size={{ xs: 3 }}>
                           <Typography variant="body2" color="textSecondary">时间:</Typography>
                         </Grid>
-                        <Grid item xs={9}>
+                        <Grid size={{ xs: 9 }}>
                           <Typography variant="body2">
                             {formatTimestamp(tx.timestamp)}
                           </Typography>

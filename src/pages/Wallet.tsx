@@ -89,6 +89,7 @@ const WalletPage: React.FC<WalletPageProps> = ({ wallets, setWallets, setError, 
       </Typography>
 
       <Grid container spacing={3}>
+        {/* 钱包列表 */}
         <Grid size={8}>
           <Paper sx={{ p: 3 }}>
             <Typography variant="h6" sx={{ mb: 3 }}>
@@ -106,18 +107,18 @@ const WalletPage: React.FC<WalletPageProps> = ({ wallets, setWallets, setError, 
                           余额: {wallet.balance ?? '加载中...'} 代币
                         </Typography>
                         <Box sx={{ mb: 1 }}>
-                          <Typography variant="body2" color="text.secondary" component="span">
+                          <Typography variant="body2" color="text.secondary" component="div">
                             地址:
                           </Typography>
-                          <Typography variant="body2" component="span" sx={{ fontFamily: 'monospace', ml: 1, fontSize: '0.875rem' }}>
+                          <Typography variant="body2" component="div" sx={{ fontFamily: 'monospace', ml: 1, fontSize: '0.875rem' }}>
                             {wallet.address}
                           </Typography>
                         </Box>
                         <Box>
-                          <Typography variant="body2" color="text.secondary" component="span">
+                          <Typography variant="body2" color="text.secondary" component="div">
                             公钥:
                           </Typography>
-                          <Typography variant="body2" component="span" sx={{ fontFamily: 'monospace', ml: 1, fontSize: '0.875rem' }}>
+                          <Typography variant="body2" component="div" sx={{ fontFamily: 'monospace', ml: 1, fontSize: '0.875rem' }}>
                             {wallet.publicKey.substring(0, 32)}...
                           </Typography>
                         </Box>
@@ -142,8 +143,8 @@ const WalletPage: React.FC<WalletPageProps> = ({ wallets, setWallets, setError, 
             )}
           </Paper>
         </Grid>
-
-        <Grid size={12}>
+        {/* 创建钱包 */}
+        <Grid size={4}>
           <Paper sx={{ p: 3, mb: 3 }}>
             <Typography variant="h6" sx={{ mb: 2 }}>
               创建新钱包

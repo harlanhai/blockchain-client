@@ -33,9 +33,8 @@ const Dashboard: React.FC<DashboardProps> = ({ wallets, blockchainInfo }) => {
   return (
     <div>
       <Typography variant="h4" className="mb-6">区块链仪表盘</Typography>
-
       <Grid container spacing={4} className="mb-6">
-        <Grid item xs={12} sm={6} lg={3}>
+        <Grid size={{xs: 12, sm: 6, lg: 3}}>
           <Card>
             <CardContent>
               <div className="flex items-center mb-4">
@@ -52,7 +51,7 @@ const Dashboard: React.FC<DashboardProps> = ({ wallets, blockchainInfo }) => {
           </Card>
         </Grid>
 
-        <Grid item xs={12} sm={6} lg={3}>
+        <Grid size={{xs: 12, sm: 6, lg: 3}}>
           <Card>
             <CardContent>
               <div className="flex items-center mb-4">
@@ -71,7 +70,7 @@ const Dashboard: React.FC<DashboardProps> = ({ wallets, blockchainInfo }) => {
           </Card>
         </Grid>
 
-        <Grid item xs={12} sm={6} lg={3}>
+        <Grid size={{xs: 12, sm: 6, lg: 3}}>
           <Card>
             <CardContent>
               <div className="flex items-center mb-4">
@@ -87,7 +86,7 @@ const Dashboard: React.FC<DashboardProps> = ({ wallets, blockchainInfo }) => {
           </Card>
         </Grid>
 
-        <Grid item xs={12} sm={6} lg={3}>
+        <Grid size={{xs: 12, sm: 6, lg: 3}}>
           <Card>
             <CardContent>
               <div className="flex items-center mb-4">
@@ -105,7 +104,7 @@ const Dashboard: React.FC<DashboardProps> = ({ wallets, blockchainInfo }) => {
       </Grid>
 
       <Grid container spacing={4}>
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Paper className="p-4">
             <Typography variant="h6" className="mb-4">最新区块</Typography>
             {blockchainInfo && blockchainInfo.chain.length > 0 ? (
@@ -132,7 +131,7 @@ const Dashboard: React.FC<DashboardProps> = ({ wallets, blockchainInfo }) => {
           </Paper>
         </Grid>
 
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Paper className="p-4">
             <Typography variant="h6" className="mb-4">我的钱包</Typography>
             {wallets.length > 0 ? (

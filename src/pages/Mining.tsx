@@ -76,7 +76,7 @@ const MiningPage: React.FC<MiningPageProps> = ({ wallets, setError, setSuccess }
       <Typography variant="h4" className="mb-6">挖矿</Typography>
 
       <Grid container spacing={4}>
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6}}>
           <Paper className="p-4 mb-4">
             <Typography variant="h6" className="mb-4">开始挖矿</Typography>
             
@@ -125,7 +125,7 @@ const MiningPage: React.FC<MiningPageProps> = ({ wallets, setError, setSuccess }
           </Paper>
         </Grid>
 
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6}}>
           <Paper className="p-4">
             <Typography variant="h6" className="mb-4">挖矿历史记录</Typography>
 
