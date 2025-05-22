@@ -1,0 +1,9 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript", // 支持 ts
+      "tsx": true, // 支持 React
+      "dynamicImport": true // 动态引用文件
+    }
+  }
+}
